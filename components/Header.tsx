@@ -1,11 +1,11 @@
-import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React from "react"
+import Link from "next/link"
+import { useRouter } from "next/router"
 
 const Header: React.FC = () => {
-  const router = useRouter();
+  const router = useRouter()
   const isActive: (pathname: string) => boolean = (pathname) =>
-    router.pathname === pathname;
+    router.pathname === pathname
 
   let left = (
     <div className="left">
@@ -34,9 +34,9 @@ const Header: React.FC = () => {
         }
       `}</style>
     </div>
-  );
+  )
 
-  let right = null;
+  let right = null
 
   return (
     <nav>
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         }
       `}</style>
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
